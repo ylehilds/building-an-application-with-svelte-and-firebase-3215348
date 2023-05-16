@@ -5,6 +5,7 @@ import { getAuth,
 	signOut,
 	signInWithEmailAndPassword
 } from 'firebase/auth';
+import { apiKey, authDomain, projectId, storageBucket, messagingSenderId, appId} from '../environment.js'
 
 import { getFirestore, collection, getDocs } from "firebase/firestore"
 
@@ -23,12 +24,12 @@ export default app;
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-	apiKey: "AIzaSyAuRjqxZqoMmvFwp-dB5_PiTqV63gpucko",
-	authDomain: "hello-world-2e275.firebaseapp.com",
-	projectId: "hello-world-2e275",
-	storageBucket: "hello-world-2e275.appspot.com",
-	messagingSenderId: "807092374177",
-	appId: "1:807092374177:web:59ab449be7c0eb94723ee0"
+	apiKey: apiKey,
+	authDomain: authDomain,
+	projectId: projectId,
+	storageBucket: storageBucket,
+	messagingSenderId: messagingSenderId,
+	appId: appId
 };
 
 // Initialize Firebase
